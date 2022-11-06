@@ -4,6 +4,10 @@ app = Flask( __name__ )
 
 from data import todos
 
+@app.route("/")
+def root():
+    return("<h1>Hola mundo</h1>")
+
 @app.route("/todos")
 def getTodos():
     return jsonify(todos)
@@ -14,4 +18,4 @@ def getTodo(id_todo):
     return todo
 
 if __name__ == '__main__':
-    app.run( debug = False, port = 4000 )
+    app.run( debug = True, port = 4000 )

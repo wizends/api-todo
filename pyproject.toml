@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "api-todos-flask"
+version = "0.1.0"
+description = ""
+authors = ["Ricardo Perez <ricardopsf1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "api_todos_flask"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
